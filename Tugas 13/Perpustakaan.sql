@@ -1,0 +1,13 @@
+CREATE DATABASE perpustakaan;
+
+USE perpustakaan;
+
+CREATE TABLE kartu_perpustakaan (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nama_lengkap VARCHAR(50) NOT NULL,
+    alamat VARCHAR(100) NOT NULL,
+    kelas_prodi VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    foto VARCHAR(100) NOT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
